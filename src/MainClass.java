@@ -1,6 +1,14 @@
-public class MainClass {
-    public static void main(String[] args) {
+import java.io.FileNotFoundException;
 
+public class MainClass {
+    public static void main(String[] args) throws FileNotFoundException {
+        Simulation simulation1 = new Simulation();
+        System.out.println(simulation1.runSimulationU1(simulation1.loadU1(simulation1.loadItems("C:\\Users\\Agata\\SpaceUdacity\\src\\phase-1.txt"))));
+        System.out.println(simulation1.runSimulationU1(simulation1.loadU1(simulation1.loadItems("C:\\Users\\Agata\\SpaceUdacity\\src\\phase-2.txt"))));
+
+
+        System.out.println(simulation1.runSimulationU2(simulation1.loadU2(simulation1.loadItems("C:\\Users\\Agata\\SpaceUdacity\\src\\phase-1.txt"))));
+        System.out.println(simulation1.runSimulationU2(simulation1.loadU2(simulation1.loadItems("C:\\Users\\Agata\\SpaceUdacity\\src\\phase-2.txt"))));
     }
 }
 

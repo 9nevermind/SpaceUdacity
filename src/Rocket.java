@@ -1,9 +1,8 @@
 public class Rocket implements SpaceShip {
-    double rocketCost;
-    int rocketWeight;
-    int maxWeightWithCargo;
-    int cargoLimit = maxWeightWithCargo - rocketWeight;
-    int cargoCarried = 0;
+    //public double rocketCost;
+    double rocketWeight;//kg
+    double maxWeightWithCargo;//kg
+
 
     public boolean launch()//returns true or false indicating if the launch was successful or if the rocket has crashed
     {
@@ -15,18 +14,13 @@ public class Rocket implements SpaceShip {
         return true;
     }
 
-    public boolean canCarry(Item item)//takes an Item as an argument and returns true if the rocket can carry such item
+//boolean canCarry(Item item)//takes an Item as an argument and returns true if the rocket can carry such item
     // or false if it will exceed the weight limit
-    {
-        if (this.cargoCarried <= this.cargoLimit) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+{
 
-    public void carry(Item item)//  takes an Item object and updates the current weight of the rocket
+}
+    // void carry(Item item)//  takes an Item object and updates the current weight of the rocket
     {
-        this.cargoCarried = this.cargoCarried + item.weight;
+        
     }
 }
