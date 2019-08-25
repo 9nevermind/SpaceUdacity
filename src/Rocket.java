@@ -4,8 +4,6 @@ public class Rocket implements SpaceShip {
     int maxWeightWithCargo;
     int cargoLimit = maxWeightWithCargo - rocketWeight;
     int cargoCarried = 0;
-    double launchExplosion;
-    double landingCrash;
 
     public boolean launch()//returns true or false indicating if the launch was successful or if the rocket has crashed
     {
